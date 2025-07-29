@@ -599,7 +599,10 @@ nav ul li a:hover {
     text-align: left;
   }
   .carousel-container {
-  height: calc(100% - 6px);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
  }
   .news-card img {
       height: 140px;
