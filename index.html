@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="asset/style.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="description" content="Website Pesona Indonesia - wisata alam, budaya, dan destinasi populer Indonesia">
+  <link rel="icon" href="img/favicon.jpg">
+  <title>Pesona Indonesia</title>
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <img loading="lazy" src="img/pesona.png" alt="brand" />
+    </div>
+    <div class="nav-icon" id="nav-icon">
+      <span class="material-symbols-outlined" id="menu-icon">menu</span>
+    </div>
+    <ul id="nav-list">
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined">home</span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#destinasi">
+          <span class="material-symbols-outlined">map</span>
+          Destinasi
+        </a>
+      </li>
+      <li>
+        <a href="#galeri">
+          <span class="material-symbols-outlined">photo_library</span>
+          Galeri
+        </a>
+      </li>
+      <li>
+        <a href="#artikel">
+          <span class="material-symbols-outlined">article</span>
+          Artikel
+        </a>
+      </li>
+      <li>
+        <a href="#kontak">
+          <span class="material-symbols-outlined">mail</span>
+          Kontak
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <h2>Pesona Indonesia</h2>
+        <p>
+          Mencerminkan keindahan alam, budaya, dan keramahan masyarakatnya. Indonesia menyuguhkan wisata yang kaya, unik, dan berkesan bagi wisatawan.
+        </p>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="card">
+        <span class="material-symbols-outlined">restaurant</span>
+        <h3>Makanan</h3>
+        <p>Nikmati berbagai macam olahan nusantara.</p>
+      </div>
+
+      <div class="card">
+        <span class="material-symbols-outlined">museum</span>
+        <h3>Budaya</h3>
+        <p>Jelajahi warisan seni dan nilai luhur.</p>
+      </div>
+
+      <div class="card">
+        <span class="material-symbols-outlined">diversity_2</span>
+        <h3>Adat</h3>
+        <p>Kenali tradisi khas dari tiap daerah.</p>
+      </div>
+    </div>
+    <section class="why-av" id="destinasi">
+      <h2 class="section-title fade-in">Wisata populer di Indonesia</h2>
+    </section>
+    <div class="why-grid animate-top">
+      <div class="vertical-line"></div>
+      <div class="why-text left">
+        <div class="dot"></div>
+        <h3>Bali</h3>
+        <p>
+          Bali menyuguhkan keindahan pantai, budaya yang unik, dan keramahan penduduk lokal. Dari Ubud yang tenang hingga Kuta yang meriah, Bali menawarkan pengalaman liburan yang lengkap dan tak terlupakan.
+        </p>
+      </div>
+      <div></div>
+      <div class="why-text right">
+        <div class="dot"></div>
+        <h3>Yogyakarta</h3>
+        <p>
+          Yogyakarta kaya akan budaya Jawa, candi megah, dan kuliner khas. Suasananya hangat dan bersahabat, cocok untuk wisata budaya, sejarah, dan petualangan kuliner yang menggugah selera.
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="why-text left">
+        <div class="dot"></div>
+        <h3>Jakarta</h3>
+        <p>
+          Jakarta adalah kota dinamis penuh hiburan, pusat belanja, dan budaya urban. Cocok bagi wisatawan yang ingin merasakan denyut kehidupan kota besar sekaligus menikmati sisi sejarahnya.
+        </p>
+      </div>
+      <div></div> <!-- kolom tengah kosong -->
+      <div class="why-text right">
+        <div class="dot"></div>
+        <h3>Bandung</h3>
+        <p>
+         Dengan udara sejuk dan pemandangan pegunungan, Bandung cocok untuk liburan santai. Wisata kuliner, belanja, dan alam berpadu menjadikannya destinasi favorit keluarga dan muda-mudi.
+        </p>
+      </div>
+    </div>
+
+    <section class="why-av" id="galeri">
+      <h2 class="section-title">Galeri Wisata Indonesia</h2>
+    </section>
+
+    <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-slide"><img src="img/eugenia-clara-_QTeGT478_8-unsplash.jpg" loading="lazy" alt="Gambar 1"></div>
+      <div class="carousel-slide"><img src="img/harry-kessell-eE2trMn-6a0-unsplash.jpg" alt="Gambar 2"></div>
+      <div class="carousel-slide"><img loading="lazy" src="img/pukpik-aB46yUmsMp0-unsplash.jpg" alt="Gambar 3"></div>
+      <div class="carousel-slide"><img loading="lazy" src="img/snapsaga-wjuB3-rbuqg-unsplash.jpg" alt="Gambar 4"></div>
+    </div>
+  </div>
+  <div class="news-section" id="artikel">
+    <section class="why-av">
+    <h2 class="section-title fade-in">Pesona Indonesia dari Kompasiana</h2>
+    </section>
+    <div class="news-container">
+      <div class="news-card">
+        <img loading="lazy" src="https://assets.kompasiana.com/items/album/2025/04/14/desa-indragiri-67fcbd3fed641506f36b0f03.jpg?t=o&v=740&x=416">
+        <div class="news-content">
+          <h3>Menjelajahi Keindahan Desa Indragiri</h3>
+          <p>Lukisan alam yang tiada habisnya, Desa Indragiri menyuguhkan panorama khas pedesaan Indonesia yang memikat hati.</p>
+          <a href="https://www.kompasiana.com/diantikaie/67fcbf9b34777c6b5c2c75d2/menjelajahi-keindahan-desa-indragiri-lukisan-alam-yang-tiada-habisnya" target="_blank">Baca selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img loading="lazy" src="https://assets.kompasiana.com/items/album/2025/06/18/whatsapp-image-2025-06-18-at-22-03-26-6852d7e7c925c406c3776ec3.jpeg?t=o&amp;v=740&amp;x=416" alt="Hidden Gem Jogja">
+        <div class="news-content">
+          <h3>Hidden Gem Dekat Jogja</h3>
+          <p>Hanya 2 jam dari Jogja, terdapat surga tersembunyi yang masih alami, cocok untuk pecinta alam dan ketenangan.</p>
+          <a href="https://www.kompasiana.com/isnaainurrifah7301/6852d9d834777c19011495d2/hanya-2-jam-dari-jogja-terdapat-surga-hidden-gem-penuh-pesona" target="_blank">Baca selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img loading="lazy" src="https://assets.kompasiana.com/items/album/2025/06/18/img-3298-6852dfeac925c419542174f2.jpeg?t=o&amp;v=740&amp;x=416" alt="Pulau Derawan (sumber : okezone.com)"  alt="Surga Tersembunyi Nusantara">
+        <div class="news-content">
+          <h3>Surga Tersembunyi Nusantara</h3>
+          <p>Dari laut hingga gunung, kekayaan Indonesia tersebar di pelosok yang belum banyak dijamah wisatawan.</p>
+          <a href="https://www.kompasiana.com/arsyafurqoni9232/6852e414c925c44f8c2d5da2/surga-tersembunyi-nusantara" target="_blank">Baca selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="kontak" id="kontak">
+  <section class="why-av">
+    <h2 class="section-title">Hubungi admin</h2>
+  </section>
+
+  <!-- Tambahkan wrapper di sini -->
+  <div class="kontak-wrapper">
+    <div class="maps" id="map"></div>
+    <div class="form-contact">
+      <form>
+        <label for="name">Name</label>
+        <input id="name" placeholder="name..." />
+        <label for="email">Email</label>
+        <input id="email" placeholder="email..." />
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" placeholder="subject..." />
+        <label for="pesan">Message</label>
+        <textarea id="pesan" placeholder="Message..."></textarea>
+        <input type="button" value="kirim" />
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/yoga-prtamaa25" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/Yongsjasjos" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/yoga.prtamaa?igsh=MW55a3UzZjNyNHY4bA==" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <div class="scroll-top">
+    <a href="#" id="scrollToTop" title="Kembali ke atas">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <p class="footer-copy">
+    Copyright ©2025. Designed by <strong>Yoga Pratama</strong>
+  </p>
+</footer>
+
+  </div>
+  <script src="asset/script.js"></script>
+</body>
+</html>
