@@ -585,8 +585,8 @@ nav ul li a:hover {
     position: absolute;
     top: 10px;
     left: 5px; 
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     background-color: darkblue;
     border-radius: 50%;
     z-index: 1;
